@@ -1,0 +1,128 @@
+/*Main style*/
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*Nav */
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.lSide {
+    display: flex;
+}
+
+.nav-wrapper > .lSide > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navLinkWrap {
+    height: 22px;
+    border-bottom: 1px transparent; 
+    transition: border-bottom 0.5s;
+}
+
+.navLinkWrap a {
+    color: tomato;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.navLinkWrap:hover{
+    border-bottom: 1px solid blue;
+}
+
+.navLinkWrap a:hover{
+    color: blue;
+}
+
+.activeNavLink {
+    border-bottom: 1px solid black;
+}
+
+.activeNavLink a{
+    color: black !important;
+}
+
+/* */
+
+.portfolioItemsWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolioItemWrap {
+    position: relative;
+}
+
+.portfolioBackgroundImage {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+.imgTextWrap {
+    position: absolute;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logoWrap img{
+    width: 100%;
+    margin-bottom: 20px ;
+}
+
+/*Specific selector*/
+.imgTextWrap .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+.imgTextWrap:hover .subtitle {
+    font-weight: 600;
+    color: limegreen;
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(70%);
+}
+
+/*About*/
+
+.twoColumnWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileImageWrap img {
+    width: 100%;
+
+}
+
+.profileContentWrap {
+    padding: 30px;
+}
+
+.profileContentWrap h1 {
+    color: limegreen;
+}
